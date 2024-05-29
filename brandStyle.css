@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: white;
+
+}
+.nav-link {
+    color: rgb(253, 99, 125);
+    font-weight: 500;
+    font-size: 20px;
+    margin: 5px;
+    
+}
+.nav-link:hover{
+    background-color: #ff4081; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+   
+}
+.btn{
+    background-color: #ff4081; 
+    color: white; 
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+.brands{
+    margin-top: 110px;
+    margin-bottom: 5px;
+}
+.heading{
+    text-align: center;
+}
+.card{
+    border: 1px solid black;
+}
+.card-img-top{
+    height: 200px;
+}
+.card:hover{
+    box-shadow: 0 0 10px rgba(255,64,129 ,0.8);
+}
+.shop-button {
+    display: none; /* Hide the Shop Now button initially */
+}
+
+.card:hover .shop-button {
+    display: block; /* Show the Shop Now button on hover */
+}
+.login{
+    text-decoration: none;
+    color: white;
+  }
+
+.login:hover{
+    color: black;
+}

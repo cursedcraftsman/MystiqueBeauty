@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Signup Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;  
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fde6e6;  
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="submit"], select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #ff80bf;  
+        color: #fff;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #ff6699;  
+    }
+    .login-link {
+        text-align: center;
+        color: #666;
+    }
+    .login-link a {
+        color: #ff80bf;  
+        text-decoration: none;
+    }
+    .login-link a:hover {
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px){
+        .container{
+        max-width: 70%;  
+        margin-top: 80px  ;
+    }
+    }
+        
+    
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        max-width: 50%;  
+        margin-top: 80px ;
+    }
+}
+
+/* For screens larger than 1024px */
+@media screen and (min-width: 1025px) {
+    .container {
+        max-width: 30%;
+        max-height:max-content;
+        margin-top: 80px  ;  
+    }
+}
+
+   
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Signup</h2>
+    <form action="#" method="post">
+        <input type="text" name="fullname" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <select name="gender" required>
+            <option value="" disabled selected>Gender</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="tel" name="mobile" placeholder="Mobile Number" required>
+        <input type="submit" value="Sign Up">
+    </form>
+    <p class="login-link">Already have an account? <a href="login.html">Sign in here</a>.</p>
+    <p class="login-link"> <a href="home.html">Home</a></p>
+</div>
+
+</body>
+</html>

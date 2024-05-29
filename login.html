@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff; 
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fde6e6;  
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    input[type="email"], input[type="password"], input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #ff80bf;  
+        color: #fff;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #ff6699;  
+    }
+    .signup-link {
+        text-align: center;
+        color: #666;
+    }
+    .signup-link a {
+        color: #ff80bf;  
+        text-decoration: none;
+    }
+    .signup-link a:hover {
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px){
+        .container{
+        max-width: 70%;  
+        margin-top: 80px  ;
+    }
+    }
+        
+    
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        max-width: 50%;  
+        margin-top: 80px ;
+    }
+}
+
+/* For screens larger than 1024px */
+@media screen and (min-width: 1025px) {
+    .container {
+        max-width: 30%;
+        max-height:max-content;
+        margin-top: 80px  ;  
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+    <form action="#">
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+    <p class="signup-link">Don't have an account yet? <a href="signup.html">Sign up here</a>.</p>
+    <p class="signup-link"><a href="home.html">Home</a></p>
+</div>
+
+</body>
+</html>

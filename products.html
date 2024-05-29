@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="products.css">
+</head>
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-3 mt-1" href="home.html">
+          <img src="logo-1.png" width="100" height="60" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="products.html"><u>Products</u></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NewArraival.html">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="brandPage.html">Brands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CustomerCorner.html">Customer Corner</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-lg-none"> <!-- Visible only on smaller screens -->
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-flex justify-content-end"> <!-- Hidden on smaller screens -->
+          <a class="btn btn-outline-success m-2" href="signup.html">Login</a>
+          <a class="btn btn-outline-primary m-2" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--navbar 2-->
+  <div>
+    <nav class="navbar navbar-expand-lg ctn">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav itemclass">
+        <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Eye Care
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Eye Creams</a></li>
+                <li><a class="dropdown-item" href="#">Eye Serums</a></li>
+                <li><a class="dropdown-item" href="#">Eyelash Growth Serums</a></li>
+                <li><a class="dropdown-item" href="#">Eye Masks</a></li>
+                <li><a class="dropdown-item" href="#">Eye Makeup Remover</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Beauty Tools
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Makeup Brushes</a></li>
+                <li><a class="dropdown-item" href="#">Makeup Sponges</a></li>
+                <li><a class="dropdown-item" href="#">Beauty Blenders</a></li>
+                <li><a class="dropdown-item" href="#">Tweezers</a></li>
+                <li><a class="dropdown-item" href="#">Makeup Organizers</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Haircare Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Shampoo</a></li>
+                <li><a class="dropdown-item" href="#">Conditioner</a></li>
+                <li><a class="dropdown-item" href="#">Hair Masks</a></li>
+                <li><a class="dropdown-item" href="#">Hair Oils</a></li>
+                <li><a class="dropdown-item" href="#">Styling Products</a></li>
+                <li><a class="dropdown-item" href="#">Hair Serums</a></li>
+                <li><a class="dropdown-item" href="#">Leave-In Conditioners</a></li>
+                <li><a class="dropdown-item" href="#">Hair Color</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Makeup Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Foundation</a></li>
+                <li><a class="dropdown-item" href="#">Concealer</a></li>
+                <li><a class="dropdown-item" href="#">Lipstick/Lip Gloss</a></li>
+                <li><a class="dropdown-item" href="#">Mascara</a></li>
+                <li><a class="dropdown-item" href="#">Eyeshadow</a></li>
+                <li><a class="dropdown-item" href="#">Eyeliner</a></li>
+                <li><a class="dropdown-item" href="#">Blush</a></li>
+                <li><a class="dropdown-item" href="#">Highlighter</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Skincare Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cleansers</a></li>
+                <li><a class="dropdown-item" href="#">Moisturizers</a></li>
+                <li><a class="dropdown-item" href="#">Serums</a></li>
+                <li><a class="dropdown-item" href="#">Sunscreens</a></li>
+                <li><a class="dropdown-item" href="#">Face Masks</a></li>
+                <li><a class="dropdown-item" href="#">Eye Creams</a></li>
+                <li><a class="dropdown-item" href="#">Toners</a></li>
+                <li><a class="dropdown-item" href="#">Exfoliators</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nail Care
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Nail Polish</a></li>
+                <li><a class="dropdown-item" href="#">Nail Polish Remover</a></li>
+                <li><a class="dropdown-item" href="#">Nail Treatments</a></li>
+                <li><a class="dropdown-item" href="#">Nail Tools</a></li>
+                <li><a class="dropdown-item" href="#">Nail Art Supplies</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Fragrances
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Perfumes</a></li>
+                <li><a class="dropdown-item" href="#">Eau de Toilette</a></li>
+                <li><a class="dropdown-item" href="#">Cologne</a></li>
+                <li><a class="dropdown-item" href="#">Body Mists</a></li>
+                <li><a class="dropdown-item" href="#">Fragrance Sets</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bath and Body
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Body Wash</a></li>
+                <li><a class="dropdown-item" href="#">Body Lotion</a></li>
+                <li><a class="dropdown-item" href="#">Body Scrubs</a></li>
+                <li><a class="dropdown-item" href="#">Hand Creams</a></li>
+                <li><a class="dropdown-item" href="#">Bath Bombs</a></li>
+                <li><a class="dropdown-item" href="#">Body Butters</a></li>
+                <li><a class="dropdown-item" href="#">Body Oils</a></li>
+                <li><a class="dropdown-item" href="#">Soaps</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Personal Care
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Feminine Hygiene Products</a></li>
+                <li><a class="dropdown-item" href="#">Incontinence Products</a></li>
+                <li><a class="dropdown-item" href="#">Shaving Creams</a></li>
+                <li><a class="dropdown-item" href="#">Razors</a></li>
+                <li><a class="dropdown-item" href="#">Mouthwash</a></li>
+                <li><a class="dropdown-item" href="#">Dental Floss</a></li>
+
+                <li><a class="dropdown-item" href="#">Toothpaste</a></li>
+                <li><a class="dropdown-item" href="#">Deodorants</a></li>
+              </ul>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--search bar-->
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col">
+        <form class="d-flex">
+          <input class="form-control me-2 searchbar" type="search" placeholder="Search for the product" aria-label="Search">
+          <button class="btn" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-3"> 
+    <div class="row ">
+      <div class="col-xs col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+        <div class="card">
+          <div class="imgcontainer"> 
+          <img src="/images/macfoundation.avif" class="card-img-top" alt="Product 1">
+          <img src="/images/maybellingirl.jpeg" class="card-img-top1">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Maybelline Fit Me Foundation</h5>
+            <p class="card-text">2990/-</p>
+            <a href="#" class="btn ms-3 ">Buy Now</a>
+            <a href="#" class="btn  ms-2">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+        <div class="card">
+          <div class="imgcontainer"> 
+          <img src="/images/urbandecay1.webp" class="card-img-top" alt="Product 1">
+          <img src="/images/urbandecay3.jpeg" class="card-img-top1">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Urban Decay Naked Eyeshadow Palette:</h5>
+            <p class="card-text">1495/-</p>
+            <a href="#" class="btn ms-3 ">Buy Now</a>
+            <a href="#" class="btn  ms-2">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+        <div class="card">
+          <div class="imgcontainer"> 
+          <img src="/images/lagirlproconceal.webp" class="card-img-top" alt="Product 1">
+          <img src="/images/lagirlproconceal1.jpeg" class="card-img-top1">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">LA Girl Pro Conceal HD Concealer</h5>
+            <p class="card-text">599/-</p>
+            <a href="#" class="btn ms-3 ">Buy Now</a>
+            <a href="#" class="btn  ms-2">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+        <div > 
+        <div class="card">
+          <div class="imgcontainer"> 
+          <img src="/images/mascara.jpeg" class="card-img-top" alt="Product 1">
+          <img src="/images/mascara1.jpeg" class="card-img-top1">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">L'Oreal Paris Volume Million Lashes Mascara: </h5>
+            <p class="card-text">999/-</p>
+            <a href="#" class="btn ms-3 ">Buy Now</a>
+            <a href="#" class="btn  ms-2">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+          <div class="card">
+            <div class="imgcontainer"> 
+            <img src="/images/macretromattelipstic.webp" class="card-img-top" alt="Product 1">
+            <img src="/images/macretromattelipstic1.jpeg" class="card-img-top1">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">MAC Retro Matte Lipstick</h5>
+              <p class="card-text">2999/-</p>
+              <a href="#" class="btn ms-3 ">Buy Now</a>
+              <a href="#" class="btn  ms-2">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-xs col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+          <div class="card">
+            <div class="imgcontainer"> 
+            <img src="/images/eyebrowpencil.jpeg" class="card-img-top" alt="Product 1">
+            <img src="/images/eyebrowpencil1.jpeg" class="card-img-top1">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Nykaa Brow Chika WOW Eyebrow Pencil</h5>
+              <p class="card-text">200/-</p>
+              <a href="#" class="btn ms-3 ">Buy Now</a>
+              <a href="#" class="btn  ms-2">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-xs col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+          <div class="card">
+            <div class="imgcontainer"> 
+            <img src="/images/blender.jpeg" class="card-img-top" alt="Product 1">
+            <img src="/images/blender1.jpeg" class="card-img-top1">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">PAC Cosmetics Beauty Blender</h5>
+              <p class="card-text">75/-</p>
+              <a href="#" class="btn ms-3 ">Buy Now</a>
+              <a href="#" class="btn  ms-2">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+         
+        <div class="col-xs col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+          <div class="card">
+            <div class="imgcontainer"> 
+            <img src="/images/cleaningwater.jpeg" class="card-img-top" alt="Product 1">
+            <img src="/images/cleaningwater1.jpeg" class="card-img-top1">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Garnier Skin Naturals Micellar Cleansing Water</h5>
+              <p class="card-text">120/-</p>
+              <a href="#" class="btn ms-3 ">Buy Now</a>
+              <a href="#" class="btn  ms-2">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+            <div class="card">
+              <div class="imgcontainer"> 
+              <img src="/images/liquidliner.jpeg" class="card-img-top" alt="Product 1">
+              <img src="/images/liquidliner1.jpeg" class="card-img-top1">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">Maybelline New York  Liquid Liner</h5>
+                <p class="card-text">300/-</p>
+                <a href="#" class="btn ms-3 ">Buy Now</a>
+                <a href="#" class="btn  ms-2">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+   
+          <div class="col-xs col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+            <div class="card">
+              <div class="imgcontainer"> 
+              <img src="/images/maclipstic.avif" class="card-img-top" alt="Product 1">
+              <img src="/images/macretromattelipstic.webp" class="card-img-top1">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">Lakme Enrich Matte Lipstick</h5>
+                <p class="card-text">3000/-</p>
+                <a href="#" class="btn ms-3 ">Buy Now</a>
+                <a href="#" class="btn  ms-2 ">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-xs col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+            <div class="card">
+              <div class="imgcontainer"> 
+              <img src="/images/max conceal.avif" class="card-img-top" alt="Product 1">
+              <img src="pexels-aleks-6713323.jpg" class="card-img-top1">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">Huda Beauty Nude Obsessions Eyeshadow </h5>
+                <p class="card-text">400/-</p>
+                <a href="#" class="btn ms-3 ">Buy Now</a>
+                <a href="#" class="btn  ms-2 ">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+           
+          <div class="col-xs col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+            <div class="card-struct">  
+            <div class="card">
+              <div class="imgcontainer"> 
+              <img src="/images/duoblush.jpeg" class="card-img-top" alt="Product 1">
+              <img src="/images/duoblush1.jpeg" class="card-img-top1">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">Nykaa Get Cheeky! Blush Duo</h5>
+                <p class="card-text">600/-</p>
+                <a href="#" class="btn ms-3 ">Buy Now</a>
+                <a href="#" class="btn ms-2">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          </div>
+       
+  
+           
+   
+      
+    
+    
+    </div>
+    
+ 
+    
+  
+  
+  </div>
+  
+  
+  
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
